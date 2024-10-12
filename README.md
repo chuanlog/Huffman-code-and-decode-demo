@@ -3,35 +3,15 @@
 #### 介绍
 本仓库用c++语言实现了一个Huffman code and decode 的演示程序
 
-#### 软件架构
-软件架构说明
 
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+####使用须知
+使用须知！！！
+ 1.使用前请务必修改主函数中相关的文件路径值
+ 2.这只是一个简单的哈夫曼编码Demo,可以实现哈夫曼编解码的基本功能,仍存在一些问题：
+    （1）解码时，所用的encoded字符串和codeTable都是在运行过程中获取的，不是从相应的二进制文件中读取的
+    （2）写进二进制文件时，最后不足八位的在相应的函数中做了补零操作，可能导致编码时程序崩溃（如果解码所使用字符串和编码表是从编码所得文件中读取的话）
+    （3）只测试过英文文本文件的测试，对于中文以及其他文本可能不支持
+ 3.txtFileFunction.h文件中以经预留了编码表和二进制文件的读写的相关函数
+ 
+ 本人能力有限，关于代码中存在的问题，期望各路英雄的斧正
+ 
